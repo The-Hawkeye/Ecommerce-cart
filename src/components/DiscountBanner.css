@@ -1,0 +1,18 @@
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.75; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes move-left-to-right {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  .blink-move-text {
+    display: inline-block;
+    animation: 
+      blink 1s step-start infinite,
+      move-left-to-right 10s linear infinite;
+  }
+  
